@@ -86,9 +86,17 @@ python -m alembic upgrade head
 # Start the services
 docker-compose up -d  # Start PostgreSQL and Redis
 
-# Run the application
+# Run the backend
 uvicorn src.main:app --reload
+
+# In a new terminal, start the frontend
+cd frontend
+npm install
+npm run dev
 ```
+
+The backend API will be available at `http://localhost:8000`
+The frontend UI will be available at `http://localhost:3000`
 
 ### Configuration
 
@@ -117,6 +125,26 @@ PREDICTION_LOOKAHEAD_DAYS=3
 ```
 
 ## 📖 Usage
+
+### Web UI
+
+The easiest way to use the system is through the modern web interface:
+
+1. Start the backend: `uvicorn src.main:app --reload`
+2. Start the frontend: `cd frontend && npm run dev`
+3. Open `http://localhost:3000` in your browser
+
+**Features:**
+- 📊 **Dashboard**: Real-time metrics, performance charts, fatigue distribution
+- 🎯 **Ad Sets**: Manage and monitor all your ad sets
+- ✨ **Creatives**: AI-powered creative generation and management
+- ⚠️ **Fatigue Monitor**: Visual fatigue detection with radar charts and recommendations
+- 📈 **Analytics**: Deep insights into creative performance
+- ⚙️ **Settings**: Configure thresholds, API keys, and notifications
+
+**Dark Mode**: Toggle between light and dark themes with the moon/sun icon
+
+**Responsive**: Works on desktop, tablet, and mobile devices
 
 ### API Endpoints
 
