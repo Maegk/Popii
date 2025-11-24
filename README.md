@@ -2,6 +2,25 @@
 
 An AI-powered system that automatically detects creative fatigue in advertising campaigns and generates fresh creative variations to maintain optimal performance.
 
+---
+
+## 🚀 Quick Start for Non-Technical Users
+
+**Want to use this without touching the command line?**
+
+1. **📥 Download**: Get the project files (download ZIP or clone)
+2. **🐳 Install Docker Desktop**: One-time install from [docker.com](https://www.docker.com/products/docker-desktop)
+3. **▶️ Double-click**: Run `start.bat` (Windows) or `start.sh` (Mac/Linux)
+4. **⏳ Wait 60 seconds**: Browser opens automatically at http://localhost:3000
+
+**📖 Complete Guide**: See [DOWNLOAD_AND_INSTALL.md](DOWNLOAD_AND_INSTALL.md) for detailed step-by-step instructions with screenshots!
+
+**📱 User Guide**: Check [USER_GUIDE.md](USER_GUIDE.md) for a complete non-technical walkthrough of all features!
+
+**🌐 Web Launcher**: Open `LAUNCH.html` in your browser for an interactive setup guide!
+
+---
+
 ## 🎯 What It Does
 
 - **Real-time Monitoring**: Tracks frequency, CTR, CPA, and other key metrics across all ad sets
